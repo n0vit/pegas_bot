@@ -8,7 +8,7 @@
 Bot requires python 3.10+
 Clone develop or master branch to your local directory
 ```sh
-git clone 
+git clone https://github.com/n0vit/pegas_bot.git
 ```
 After cloning
 ```sh
