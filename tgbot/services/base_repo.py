@@ -7,7 +7,7 @@ from ..models.schedule_model import ScheduleModel
 
 
 class BaseHttpRepository:
-    def _dateparser(self, *args, **kwargs) -> dict[str, Any]:
+    def _dateparser(self, *args, **kwargs):
         timestart = kwargs.get("timestart", 0)
         kwargs["timestart"] = datetime.datetime.fromtimestamp(timestart)
         timeend = kwargs.get("timeend", 0)

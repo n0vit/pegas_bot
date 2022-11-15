@@ -25,7 +25,7 @@ async def command_start_handler(message: Message, bot: Bot) -> None:
 
 
 @router.message(Command(commands=["add_group"]))
-async def command_start_handler(message: Message, command: CommandObject) -> None:
+async def add_group_handler(message: Message, command: CommandObject) -> None:
     args = command.args
     reg_update(group=args, chat_id=str(message.chat.id))
     models = BaseHttpRepository().get_schedule(group=args, chat_id=str(message.chat.id))

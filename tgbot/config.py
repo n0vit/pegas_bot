@@ -2,9 +2,6 @@ import configparser
 from dataclasses import dataclass
 
 
-
-
-
 @dataclass
 class TgBot:
     token: str
@@ -33,5 +30,4 @@ def load_config(path: str):
             admin_id=tg_bot.getint("admin_id"),
             use_redis=tg_bot.getboolean("use_redis"),
         ),
-
     )

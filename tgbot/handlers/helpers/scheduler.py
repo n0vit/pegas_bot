@@ -2,12 +2,12 @@ import datetime
 from typing import List
 
 from aiogram.methods.send_message import SendMessage
-from aiogram.types import InlineKeyboardButton, Message
+from aiogram.types import InlineKeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 from apscheduler.triggers.cron import CronTrigger
 from apscheduler.triggers.date import DateTrigger
 
-from ...loader import logger, scheduler
+from ...loader import scheduler
 from ...models.schedule_model import ScheduleModel
 from ...services.base_repo import BaseHttpRepository
 
