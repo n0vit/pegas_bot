@@ -12,5 +12,6 @@ git clone https://github.com/n0vit/pegas_bot.git
 ```
 After cloning
 ```sh
+pip install https://github.com/aiogram/aiogram/archive/refs/heads/dev-3.x.zip
 pip install -r requirements.txt
 ```
