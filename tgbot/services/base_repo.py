@@ -1,5 +1,5 @@
 import datetime
-from typing import Any, List
+from typing import List
 
 import requests
 
